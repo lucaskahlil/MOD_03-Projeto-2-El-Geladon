@@ -1,12 +1,11 @@
-import PaletaLista from "./PaletaLista";
-import "./Home.css";
-import sacola from "../assets/icons/sacola.svg";
-import logo from "../assets/logo.svg";
+import './Navbar.css';
+import sacola from "../../assets/icons/sacola.svg";
+import logo from "../../assets/logo.svg";
 
-function Home() {
-  return (
-    <div className="Home">
-      <div className="Home__header Header">
+
+function Navbar () {
+    return (
+        <div className="Home__header Header">
         <div className="row">
           <div className="Header__logo Logo">
             <img
@@ -29,11 +28,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="Home__container">
-        <PaletaLista />
-      </div>
-    </div>
-  );
+    );
 }
 
-export default Home;
+export default Navbar

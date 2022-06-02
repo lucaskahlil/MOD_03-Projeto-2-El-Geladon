@@ -1,36 +1,13 @@
-.PaletaLista {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px 50px;
-  }
-  
-  @media (max-width: 1220px) {
-    .PaletaLista {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 840px) {
-    .PaletaLista {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .PaletaListaItem {
+.PaletaListaItem {
     font-family: "Exo";
-    background: rgba(255, 255, 255, 0.3);
+    background-color: rgb(53, 139, 190);
     border-radius: 10px;
+    box-shadow: 0 0 1em black;
     padding: 10px;
-    width: 315px;
+    width: 400px;
+    height: auto;
     display: flex;
     justify-content: space-around;
-  }
-  
-  @media (max-width: 400px) {
-    .PaletaListaItem {
-      width: 210px;
-      height: 180px;
-    }
   }
   
   .PaletaListaItem > div {
@@ -50,7 +27,7 @@
   }
   
   .PaletaListaItem__preco {
-    color: darkviolet;
+    color: white;
   }
   
   .Acoes {
@@ -61,7 +38,7 @@
   .Acoes__adicionar,
   .Acoes__remover {
     border: none;
-    color: white;
+    color: black;
     border-radius: 5px;
     font-family: "Exo", sans-serif;
     padding: 5px;
@@ -78,7 +55,7 @@
   }
   
   .Acoes__adicionar {
-    background-color: darkviolet;
+    background-color: white;
   }
   
   .Acoes__adicionar--preencher {
@@ -87,22 +64,22 @@
   
   .PaletaListaItem__foto {
     height: 150px;
-    margin-right: -60px;
   }
 
   .PaletaListaItem__badge {
-    background-color: greenyellow;
-    width: 20px;
-    height: 20px;
+    background-color: white;
+    border: solid 1px black;
+    width: 30px;
+    height: 30px;
     text-align: center;
     vertical-align: middle;
     position: relative;
     color: black;
-    font-size: .8em;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 30%;
     top: -9px;
     left: -9px;
   }
